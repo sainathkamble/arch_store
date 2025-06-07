@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import '../global.css';
 
-const AddProduct = ({ onAddProduct }) => {
+export const AddProduct = ({ onAddProduct }) => {
   const [newProduct, setNewProduct] = useState({ name: '', brand: '', price: '', discount: '', images: [] });
 
   const handleInputChange = (e) => {
@@ -67,6 +68,4 @@ const AddProduct = ({ onAddProduct }) => {
       <button type="submit" className="bg-green-600 text-white p-2 rounded mt-2 w-full hover:bg-green-700 transition-colors duration-300">Add Product</button>
     </form>
   );
-};
-
-export default AddProduct;
+}

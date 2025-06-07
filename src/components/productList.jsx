@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../global.css';
-import AddProduct from './AddProduct';
+import { AddProduct } from './addProduct.jsx';
 
 const initialProducts = [
   { id: 1, name: 'Product 1', brand: 'Brand A', price: 100, discount: 10, images: ['image1.jpg', 'image2.jpg'] },
